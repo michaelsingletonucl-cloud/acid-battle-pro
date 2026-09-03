@@ -23,6 +23,9 @@ header[data-testid="stHeader"]{background:transparent;height:0}
 [data-testid="stToolbar"],[data-testid="stDecoration"],[data-testid="stStatusWidget"]{display:none!important}
 .block-container{padding:0!important;max-width:none!important}
 iframe{border:0!important}
+
+
+
 </style>
 """,
     unsafe_allow_html=True,
@@ -92,6 +95,13 @@ button{font:inherit}
 .spark{position:absolute;width:5px;height:5px;border-radius:50%;background:#ffe089;box-shadow:0 0 10px #ffe089;pointer-events:none;animation:spark .62s ease-out forwards}@keyframes spark{to{transform:translate(var(--dx),var(--dy)) scale(.1);opacity:0}}
 @media(max-width:900px){.setup-grid{grid-template-columns:1fr}.hero-copy{max-width:none}.table-grid{grid-template-columns:120px minmax(135px,180px) minmax(190px,1fr) minmax(135px,180px) 50px}.hand-area{grid-template-columns:1fr 120px}.deck-stack{width:44px;height:62px}}
 @media(max-width:680px){#app{padding:7px}.topbar{margin-bottom:7px}.brandmark{width:37px;height:37px}.brand h1{font-size:18px}.brand small{display:none}.ghost{min-height:40px;padding:8px 10px}.sound-btn{min-width:42px}.sound-label{display:none}.setup{padding:17px 12px}.choice-row.three{grid-template-columns:1fr}.hud{grid-template-columns:1fr auto;padding:8px}.battle-title{display:none}.hud-left,.hud-right{gap:4px}.hud-right{justify-content:flex-end}.pill{font-size:9px;padding:5px 7px}.table{margin:7px;padding:8px;min-height:0}.table-grid{grid-template-columns:72px minmax(112px,1fr) minmax(135px,1.15fr) 38px;grid-template-areas:"cpiles cpu result pot";gap:5px;min-height:230px}.cpu-piles{grid-area:cpiles;grid-template-columns:1fr;gap:3px}.cpu-card-holder{grid-area:cpu}.result-box{grid-area:result;min-height:122px;padding:8px}.player-center-holder{display:none}.war-pot{grid-area:pot}.deck-stack{width:32px;height:45px}.pile-count{font-size:11px}.pile-label{font-size:8px}.card{padding:4px;border-radius:9px}.card-title{font-size:9px;height:21px;top:4px;left:4px;right:4px}.structure-frame{left:4px;right:4px;top:28px;bottom:29px}.pka{left:4px;right:4px;bottom:5px;font-size:10px;height:19px}.estimate{left:4px;right:4px;bottom:0;font-size:7px}.hand .structure-frame{top:28px;bottom:29px}.hand .card-title{top:4px;height:21px}.result-head{font-size:12px}.capture-note,.result-detail{font-size:8.5px}.next-note{display:none}.hand-area{display:block;margin-top:8px}.player-piles{display:none}.hand{display:flex;height:166px;overflow-x:auto;gap:7px;scroll-snap-type:x mandatory;padding:0 2px 5px}.hand-slot{flex:0 0 132px;scroll-snap-align:start}.hand .card-title{font-size:9px}.hand-title{font-size:10px}.footer-note{padding-bottom:8px}.gameover-actions{grid-template-columns:1fr}}
+.entry{padding:clamp(20px,4vw,48px);position:relative;z-index:2}
+.entry-actions{display:grid;gap:11px}.entry-btn{width:100%;border:1px solid #49697e;border-radius:14px;background:#102b3b;color:#e7f4fb;padding:16px 14px;text-align:left;cursor:pointer;box-shadow:inset 0 -3px 0 rgba(0,0,0,.18);transition:.14s ease}.entry-btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.entry-btn strong{display:block;font-size:17px;letter-spacing:.02em}.entry-btn span{display:block;color:#9db9c9;font-size:12px;margin-top:4px;line-height:1.4}.entry-btn.primary-entry{background:linear-gradient(180deg,#193f56,#102b3b);border-color:#6aa8cc}.entry-btn.guest-entry{background:#12242f}.disabled-look{opacity:.68}
+.auth-panel{display:none}.auth-note{font-size:12px;line-height:1.45;color:#a9c4d3;background:#0e202d;border:1px solid #37566a;border-radius:11px;padding:10px 11px;margin-bottom:11px}.auth-note b{color:#fff}.form-label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.10em;color:#84b5d0;font-weight:950;margin:10px 0 6px}.auth-input{width:100%;border:1px solid #44687d;border-radius:11px;background:#071821;color:#eef8fd;padding:13px 12px;font-size:16px;outline:none}.auth-input:focus{border-color:#7cc8f1;box-shadow:0 0 0 3px rgba(120,199,255,.12)}.pin-input{letter-spacing:.35em;font-weight:950}.auth-buttons{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.auth-buttons button{min-height:48px}.auth-message{min-height:19px;margin-top:9px;font-size:11px;color:#a9c4d3}.auth-message.error{color:#ff9b9b}.auth-message.working{color:#ffd36a}.tiny-link{margin-top:9px;border:0;background:transparent;color:#9fc8dd;text-decoration:underline;cursor:pointer;padding:4px 0;font-weight:750}.config-note{display:none;margin-top:11px;padding:9px 10px;border:1px solid #7a6135;border-radius:10px;background:#2a2112;color:#e5c985;font-size:11px;line-height:1.4}
+.mode-chip{display:inline-flex;align-items:center;gap:7px;margin-top:12px;border:1px solid #486a7e;border-radius:999px;background:#0c1d28;padding:8px 11px;color:#9db8c8;font-size:12px}.mode-chip b{color:#fff}.setup-status{min-height:18px;color:#ffab8f;font-size:11px;margin-top:8px;line-height:1.3}.profile-stats{font-size:10px;color:#9cc6dc;margin-left:5px}.saved-note{color:#9bb7c7;font-size:11px}
+.strategy-feedback{margin-top:8px;border-radius:8px;padding:7px 8px;font-size:9.5px;line-height:1.35}.strategy-feedback.good{border:1px solid rgba(114,228,154,.45);background:rgba(46,112,69,.25);color:#baf5cd}.strategy-feedback.bad{border:1px solid rgba(255,211,106,.35);background:rgba(100,75,23,.22);color:#efdba8}
+.lb-overlay{position:fixed;inset:0;z-index:100;background:rgba(2,8,12,.78);display:none;align-items:center;justify-content:center;padding:14px}.lb-overlay.show{display:flex}.lb-card{width:min(720px,96vw);max-height:88vh;overflow:auto;border:2px solid #4c6b80;border-radius:20px;background:linear-gradient(180deg,#142b3a,#081721);box-shadow:0 24px 60px rgba(0,0,0,.55);padding:16px}.lb-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.lb-title{font-size:23px;font-weight:1000}.lb-sub{color:#8faabb;font-size:11px;margin-top:3px}.lb-controls{display:flex;gap:7px}.lb-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0 10px}.lb-tab{border:1px solid #416076;background:#0d202c;color:#b8cfdb;border-radius:11px;padding:11px;font-weight:900;cursor:pointer}.lb-tab.active{background:#d5edf9;color:#09283a;border-color:#8acdf2}.leaderboard-loading,.leaderboard-empty{padding:30px 12px;text-align:center;color:#9fb6c5}.lb-row{display:grid;grid-template-columns:42px 1fr 95px 100px;gap:8px;align-items:center;padding:9px 8px;border-bottom:1px solid rgba(118,153,174,.17);font-size:13px}.lb-row span:nth-child(3),.lb-row span:nth-child(4){text-align:right;font-variant-numeric:tabular-nums}.lb-row.lb-head{color:#89aabd;text-transform:uppercase;font-size:10px;font-weight:950;letter-spacing:.08em}.lb-row.mine{background:rgba(120,199,255,.09);border-radius:8px}.lb-row small{color:#77c8f8;font-weight:900}.lb-foot{margin-top:10px;color:#809cac;font-size:10px;line-height:1.4}
+@media(max-width:680px){.topbar{flex-wrap:wrap}.top-actions{width:100%;justify-content:flex-end}.top-actions #profile{max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.entry{padding:17px 12px}.auth-buttons{grid-template-columns:1fr}.lb-overlay{padding:7px}.lb-card{padding:12px;border-radius:15px;max-height:92vh}.lb-title{font-size:19px}.lb-row{grid-template-columns:30px 1fr 64px 70px;font-size:11px;padding:8px 4px}.lb-controls .sound-label{display:none}.profile-stats{display:none}.strategy-feedback{font-size:8.5px;padding:5px 6px}}
 </style>
 </head>
 <body>
@@ -99,6 +109,8 @@ button{font:inherit}
   <div class="topbar">
     <div class="brand"><div class="brandmark">⚗️</div><div><h1>ACID BATTLE</h1><small>Physical Organic Chemistry</small></div></div>
     <div class="top-actions">
+      <button class="ghost" id="profile" style="display:none" title="Switch player"></button>
+      <button class="ghost" id="leaderboardBtn">🏆 Leaderboards</button>
       <button class="ghost sound-btn" id="sound"><span class="sound-icon" id="soundIcon">🔊</span> <span class="sound-label" id="soundLabel">Sound on</span></button>
       <button class="ghost" id="fullscreen">⛶ Full screen</button>
     </div>
@@ -106,13 +118,48 @@ button{font:inherit}
 
   <div class="machine">
     <div class="rivets"></div>
-    <section class="setup" id="setup">
+    <section class="entry" id="entry">
+      <div class="setup-grid">
+        <div>
+          <div class="hero-kicker">Physical organic chemistry</div>
+          <div class="hero-title">ACID<br>BATTLE</div>
+          <div class="hero-copy">Play freely as a guest, or create a player profile to save your wins and optimal-move strategy record to the class leaderboards.</div>
+          <div class="rule-chip"><b>LOWER pKa WINS</b><span>•</span><span>play smart, not just strong</span></div>
+        </div>
+        <div class="console">
+          <div class="screen">
+            <div id="entryChoices">
+              <div class="screen-title">Choose how to play</div>
+              <div class="entry-actions">
+                <button class="entry-btn guest-entry" id="entryGuest"><strong>PLAY AS GUEST</strong><span>Practice normally. Strategy feedback is shown, but nothing is saved.</span></button>
+                <button class="entry-btn primary-entry" id="entryPlayer"><strong>SIGN IN / CREATE PLAYER</strong><span>Save wins and optimal-move percentage to the class leaderboards.</span></button>
+              </div>
+              <div class="config-note" id="leaderboardConfigNote">Player accounts are not configured yet on this deployment. Guest play is available.</div>
+            </div>
+            <div class="auth-panel" id="authPanel">
+              <div class="screen-title">Player profile</div>
+              <div class="auth-note">Use a <b>nickname</b>, not your full name. <b>Remember your nickname and 4-digit PIN.</b> You need both to return to the same score record. There is no PIN recovery.</div>
+              <label class="form-label" for="nicknameInput">Nickname</label>
+              <input class="auth-input" id="nicknameInput" maxlength="20" autocomplete="username" placeholder="e.g. AcidMaster">
+              <label class="form-label" for="pinInput">4-digit PIN</label>
+              <input class="auth-input pin-input" id="pinInput" maxlength="4" inputmode="numeric" pattern="[0-9]*" autocomplete="current-password" type="password" placeholder="••••">
+              <div class="auth-buttons"><button class="ghost" id="signIn">SIGN IN</button><button class="start" id="createPlayer" style="margin-top:0">CREATE PLAYER</button></div>
+              <div class="auth-message" id="authMessage"></div>
+              <button class="tiny-link" id="authBack">← Back to Guest / Player choice</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="setup" id="setup" style="display:none">
       <div class="setup-grid">
         <div>
           <div class="hero-kicker">War-style pKa card game</div>
           <div class="hero-title">Choose your hand.<br>Capture the deck.</div>
           <div class="hero-copy">The computer reveals an acid. You choose one acid from your five-card hand to fight it. The lower pKa wins the trick and captures the cards. Each acid type starts with one copy on each side, so both players begin with the same chemistry deck.</div>
           <div class="rule-chip"><b>LOWER pKa WINS</b><span>•</span><span>ties build the war pot</span></div>
+          <div class="mode-chip" id="modeChip"></div>
         </div>
         <div class="console">
           <div class="screen">
@@ -130,6 +177,7 @@ button{font:inherit}
             </div>
             <div class="pool-note" id="poolNote">Every selected acid appears once in the physical battle deck. An odd-sized deck is split as evenly as possible.</div>
             <button class="start" id="start">DEAL THE CARDS</button>
+            <div class="setup-status" id="setupStatus"></div>
           </div>
         </div>
       </div>
@@ -142,6 +190,8 @@ button{font:inherit}
           <span class="pill"><b id="deckHud">25</b> cards</span>
           <span class="pill">Trick <b id="trickHud">1</b></span>
           <span class="pill">War pot <b id="potHud">0</b></span>
+          <span class="pill">Player <b id="playerHud">Guest</b></span>
+          <span class="pill">Strategy <b id="strategyHud">—</b></span>
         </div>
         <div class="battle-title">LOWER pKa WINS • CAPTURE THE WHOLE DECK</div>
         <div class="hud-right"><button class="ghost" id="change">Change deck</button></div>
@@ -171,20 +221,38 @@ button{font:inherit}
       </div>
       <div class="footer-note">pKa values are revealed only after you commit a card. Close values within 0.20 pKa units are treated as a tie.</div>
     </section>
+
+    <div class="lb-overlay" id="leaderboardModal">
+      <div class="lb-card">
+        <div class="lb-top">
+          <div><div class="lb-title">Acid Battle Leaderboards</div><div class="lb-sub">Wins and strategy are tracked separately.</div></div>
+          <div class="lb-controls"><button class="ghost" id="leaderboardRefresh">↻</button><button class="ghost" id="leaderboardClose">✕</button></div>
+        </div>
+        <div class="lb-tabs"><button class="lb-tab active" data-lb="wins">🏆 WINS</button><button class="lb-tab" data-lb="strategy">🎯 STRATEGY</button></div>
+        <div id="leaderboardBody"></div>
+        <div class="lb-foot">Strategy ranks optimal-move percentage and requires at least 20 recorded moves. Moves are recorded as they are played, including moves from unfinished games. A win counts only when a game is completed.</div>
+      </div>
+    </div>
   </div>
 </div>
 
 <script>
 (function(){
-const args=__ACID_BATTLE_DATA__; let solvent='water', deckChoice='25', pool=[];
+const args=__ACID_BATTLE_DATA__;
+let solvent='water', deckChoice='25', pool=[];
 let hand=[], playerDraw=[], playerWon=[], cpuDraw=[], cpuWon=[], cpuCurrent=null, warPot=[];
 let turn=0, waiting=false, gameOver=false, timer=null, audioCtx=null, muted=false, lastPlayed=null;
-const HAND_SIZE=5, TIE_TOL=0.20, HOLD_MS=3600;
+let playerMode='entry', playerNickname='', sessionToken='', currentGameId=null;
+let gameMoves=0, gameOptimal=0, pendingMoves=new Map(), movePromises=new Set();
+let persistentStats={wins:0,moves:0,optimal_moves:0,optimal_pct:null};
+let leaderboardRows=[], leaderboardMode='wins';
+const HAND_SIZE=5, TIE_TOL=0.20, HOLD_MS=3600, STRATEGY_MIN=20;
 const $=id=>document.getElementById(id);
 function send(type,data){window.parent.postMessage(Object.assign({isStreamlitMessage:true,type:type},data||{}),'*')}
 function setHeight(){setTimeout(()=>send('streamlit:setFrameHeight',{height:Math.max(document.body.scrollHeight+6,620)}),20)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function apiReady(){return !!(args.supabase_url&&args.supabase_key&&args.course_code)}
 function loadSoundPref(){try{muted=localStorage.getItem('acidBattleMuted')==='1'}catch(e){muted=false}updateSoundButton()}
 function updateSoundButton(){const b=$('sound');b.classList.toggle('muted',muted);b.setAttribute('aria-pressed',muted?'true':'false');b.title=muted?'Turn sound on':'Mute sound';$('soundIcon').textContent=muted?'🔇':'🔊';$('soundLabel').textContent=muted?'Muted':'Sound on'}
 function ensureAudio(){if(muted)return null;try{const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return null;if(!audioCtx)audioCtx=new AC();if(audioCtx.state==='suspended')audioCtx.resume();return audioCtx}catch(e){return null}}
@@ -197,10 +265,85 @@ function sfxLoss(){tone(180,.17,.046,'triangle',0,105);tone(116,.17,.028,'square
 function sfxTie(){tone(430,.10,.032,'sine',0,430);tone(430,.10,.032,'sine',.11,430)}
 function sfxCaptureBig(){tone(650,.08,.032,'sine',0,780);tone(900,.09,.032,'sine',.06,1080);tone(1250,.13,.028,'sine',.12,1420)}
 function toggleSound(){muted=!muted;try{localStorage.setItem('acidBattleMuted',muted?'1':'0')}catch(e){}if(!muted)ensureAudio();updateSoundButton()}
+
+async function rpc(name,body,keepalive=false){
+  if(!apiReady())throw new Error('Leaderboard service is not configured.');
+  const headers={'Content-Type':'application/json','Accept':'application/json','apikey':args.supabase_key};
+  if(String(args.supabase_key).split('.').length===3)headers['Authorization']='Bearer '+args.supabase_key;
+  const response=await fetch(String(args.supabase_url).replace(/\/$/,'')+'/rest/v1/rpc/'+name,{method:'POST',headers,body:JSON.stringify(body||{}),keepalive:!!keepalive});
+  const raw=await response.text();
+  let data=null;
+  if(raw){try{data=JSON.parse(raw)}catch(e){data=raw}}
+  if(!response.ok){const detail=(data&&data.message)||raw||('HTTP '+response.status);throw new Error(detail)}
+  if(typeof data==='string'&&data.trim().startsWith('{')){try{data=JSON.parse(data)}catch(e){}}
+  return data;
+}
+function setAuthMessage(text,kind=''){const box=$('authMessage');box.textContent=text||'';box.className='auth-message'+(kind?' '+kind:'')}
+function savedNickname(){try{return localStorage.getItem('acidBattleNickname')||''}catch(e){return ''}}
+function saveNickname(n){try{localStorage.setItem('acidBattleNickname',n)}catch(e){}}
+function clientNicknameAllowed(name){
+  const n=String(name||'').trim();
+  if(n.length<3||n.length>20||!/^[A-Za-z0-9 _-]+$/.test(n))return false;
+  let x=n.toLowerCase().replace(/[^a-z0-9]/g,'').replace(/0/g,'o').replace(/1/g,'i').replace(/3/g,'e').replace(/4/g,'a').replace(/5/g,'s').replace(/7/g,'t');
+  if(/(fuck|shit|cunt|nigg|fagg|bitch|whore|slut|penis|vagina|pussy|cock)/.test(x))return false;
+  if(['admin','administrator','professor','instructor','teacher','moderator'].includes(x))return false;
+  return true;
+}
+function authErrorMessage(code){
+  const map={nickname_taken:'That nickname is already in use. Sign in if it is yours, or choose another nickname.',nickname_not_allowed:'Please choose a different nickname.',pin_invalid:'The PIN must be exactly 4 digits.',invalid_login:'Nickname or PIN is incorrect.',session_expired:'Your player session expired. Please sign in again.',course_not_configured:'The course leaderboard is not configured.',game_settings_invalid:'Those game settings could not be saved.'};
+  return map[code]||'Could not connect to the leaderboard. Please try again.';
+}
+function showAuth(){
+  $('entryChoices').style.display='none';$('authPanel').style.display='block';
+  $('nicknameInput').value=savedNickname();$('pinInput').value='';setAuthMessage('');$('nicknameInput').focus();setHeight();
+}
+function hideAuth(){$('authPanel').style.display='none';$('entryChoices').style.display='block';setAuthMessage('');setHeight()}
+function updateModeUI(){
+  const chip=$('modeChip'),profile=$('profile');
+  if(playerMode==='player'){
+    chip.innerHTML='<b>'+esc(playerNickname)+'</b><span>• scores saved</span>';
+    profile.style.display='inline-flex';profile.innerHTML='👤 '+esc(playerNickname)+' <span class="profile-stats">🏆 '+Number(persistentStats.wins||0)+' · 🎯 '+(persistentStats.optimal_pct==null?'—':persistentStats.optimal_pct+'%')+'</span>';
+  }else if(playerMode==='guest'){
+    chip.innerHTML='<b>Guest</b><span>• practice only — scores are not saved</span>';
+    profile.style.display='inline-flex';profile.innerHTML='👤 Guest';
+  }else profile.style.display='none';
+}
+function goToSetup(){
+  $('entry').style.display='none';$('battle').style.display='none';$('setup').style.display='block';$('gameover').classList.remove('show');updateModeUI();refreshDeckControls();setHeight();
+}
+function enterGuest(){playerMode='guest';playerNickname='';sessionToken='';currentGameId=null;persistentStats={wins:0,moves:0,optimal_moves:0,optimal_pct:null};goToSetup()}
+function enterPlayer(data){
+  playerMode='player';playerNickname=data.nickname||$('nicknameInput').value.trim();sessionToken=data.session_token||'';currentGameId=null;
+  persistentStats={wins:Number(data.wins||0),moves:Number(data.moves||0),optimal_moves:Number(data.optimal_moves||0),optimal_pct:data.optimal_pct==null?null:Number(data.optimal_pct)};
+  saveNickname(playerNickname);goToSetup();
+}
+async function authPlayer(action){
+  if(!apiReady()){setAuthMessage('Leaderboard setup is incomplete. Guest play is still available.','error');return}
+  const nickname=$('nicknameInput').value.trim(),pin=$('pinInput').value.trim();
+  if(!clientNicknameAllowed(nickname)){setAuthMessage('Use 3–20 letters/numbers/spaces/_/-. Please choose an appropriate nickname.','error');return}
+  if(!/^\d{4}$/.test(pin)){setAuthMessage('Enter a 4-digit PIN.','error');return}
+  $('signIn').disabled=true;$('createPlayer').disabled=true;setAuthMessage(action==='create'?'Creating player…':'Signing in…','working');
+  try{
+    const fn=action==='create'?'acid_create_player':'acid_login_player';
+    const data=await rpc(fn,{p_course_code:args.course_code,p_nickname:nickname,p_pin:pin});
+    if(!data||data.ok!==true){setAuthMessage(authErrorMessage(data&&data.error),'error');return}
+    enterPlayer(data);
+  }catch(e){setAuthMessage('Could not reach the leaderboard. '+e.message,'error')}
+  finally{$('signIn').disabled=false;$('createPlayer').disabled=false;setHeight()}
+}
+function switchPlayer(){
+  if(timer){clearTimeout(timer);timer=null} waiting=false;gameOver=false;currentGameId=null;playerMode='entry';playerNickname='';sessionToken='';
+  $('battle').style.display='none';$('setup').style.display='none';$('entry').style.display='block';$('gameover').classList.remove('show');$('profile').style.display='none';hideAuth();setHeight();
+}
+async function refreshMyStats(){
+  if(playerMode!=='player'||!sessionToken)return;
+  try{const d=await rpc('acid_my_stats',{p_course_code:args.course_code,p_session_token:sessionToken});if(d&&d.ok){persistentStats={wins:Number(d.wins||0),moves:Number(d.moves||0),optimal_moves:Number(d.optimal_moves||0),optimal_pct:d.optimal_pct==null?null:Number(d.optimal_pct)};updateModeUI()}}
+  catch(e){}
+}
+
 function currentList(){return solvent==='water'?(args.water||[]):(args.dmso||[])}
-function acidById(id,list){return list.find(a=>a.id===id)}
-function buildPool(){const list=currentList();if(deckChoice==='all'){pool=list.slice();return}if(solvent==='water'){const ids=deckChoice==='25'?(args.core25||[]):(args.extended50||[]);pool=ids.map(id=>acidById(id,list)).filter(Boolean)}else{pool=list.slice(0,Math.min(Number(deckChoice),list.length))}}
-function refreshDeckControls(){const n=currentList().length;document.querySelectorAll('[data-deck]').forEach(b=>{const need=b.dataset.deck==='all'?0:Number(b.dataset.deck),disabled=need>n;b.disabled=disabled;b.classList.toggle('disabled',disabled);b.setAttribute('aria-disabled',disabled?'true':'false')});$('allCount').textContent=n+' acids';if((deckChoice==='25'&&n<25)||(deckChoice==='50'&&n<50))deckChoice='all';document.querySelectorAll('[data-deck]').forEach(b=>{const active=b.dataset.deck===deckChoice;b.classList.toggle('active',active);b.setAttribute('aria-pressed',active?'true':'false')});const selected=(deckChoice==='all')?n:Number(deckChoice);$('poolNote').textContent=(n<25?'This solvent currently has '+n+' reference acids, so the whole-list deck is used. ':'')+selected+' acid types = '+(selected*2)+' physical cards. Each selected acid appears once in your starting deck and once in the computer’s, so both sides begin with identical acid-strength distributions.'}
+function buildPool(){const list=currentList();if(deckChoice==='all'){pool=list.slice();return}const n=Math.min(Number(deckChoice),list.length);pool=shuffle(list.slice()).slice(0,n)}
+function refreshDeckControls(){const n=currentList().length;document.querySelectorAll('[data-deck]').forEach(b=>{const need=b.dataset.deck==='all'?0:Number(b.dataset.deck),disabled=need>n;b.disabled=disabled;b.classList.toggle('disabled',disabled);b.setAttribute('aria-disabled',disabled?'true':'false')});$('allCount').textContent=n+' acids';if((deckChoice==='25'&&n<25)||(deckChoice==='50'&&n<50))deckChoice='all';document.querySelectorAll('[data-deck]').forEach(b=>{const active=b.dataset.deck===deckChoice;b.classList.toggle('active',active);b.setAttribute('aria-pressed',active?'true':'false')});const selected=(deckChoice==='all')?n:Number(deckChoice);$('poolNote').textContent=(n<25?'This solvent currently has '+n+' reference acids, so the whole-list deck is used. ':'')+selected+' acid types = '+(selected*2)+' physical cards. For 25- and 50-acid games, a new random set of acid types is chosen for every battle. Both sides receive the same selected acid set, then the decks are shuffled independently.'}
 function setSolvent(v){if(v!=='water'&&v!=='dmso')return;solvent=v;document.querySelectorAll('[data-solvent]').forEach(b=>{const active=b.dataset.solvent===v;b.classList.toggle('active',active);b.setAttribute('aria-pressed',active?'true':'false')});refreshDeckControls();setHeight()}
 function setDeck(v){const b=document.querySelector('[data-deck="'+v+'"]');if(!b||b.disabled)return;deckChoice=v;document.querySelectorAll('[data-deck]').forEach(x=>{const active=x.dataset.deck===v;x.classList.toggle('active',active);x.setAttribute('aria-pressed',active?'true':'false')});refreshDeckControls();setHeight()}
 function makeInstance(card,side,n){return Object.assign({},card,{instance_id:card.id+'__'+side+'__'+n+'__'+Math.random().toString(36).slice(2,7)})}
@@ -211,33 +354,112 @@ function playerTotal(includeCenter=true){let n=hand.length+playerDraw.length+pla
 function cpuTotal(includeCenter=true){let n=cpuDraw.length+cpuWon.length+(cpuCurrent?1:0);if(includeCenter&&!cpuCurrent&&lastPlayed&&waiting)n++;return n}
 function pkaText(c){return c?(c.pka_text||String(c.pka)):''}
 function formula(c){return c?(c.ref||c.name||''):''}
+function cardValue(c){return c?(c.pka==null?Number(c.pka_sort):Number(c.pka)):Infinity}
+function wouldWin(c,opp){if(!c||!opp)return false;if(c.pka!=null&&opp.pka!=null)return Number(c.pka)<Number(opp.pka)-TIE_TOL-1e-12;return cardValue(c)<cardValue(opp)}
+function analyzeOptimal(cards,opp,chosenId){
+  const winners=cards.filter(c=>wouldWin(c,opp));const candidates=winners.length?winners:cards.slice();
+  if(!candidates.length)return{optimal:true,best:[],canWin:false};
+  const bestValue=Math.max(...candidates.map(cardValue));const best=candidates.filter(c=>Math.abs(cardValue(c)-bestValue)<1e-9);
+  return{optimal:best.some(c=>c.instance_id===chosenId),best,canWin:winners.length>0};
+}
+function strategyHtml(a){
+  if(!a)return'';
+  if(a.optimal)return'<div class="strategy-feedback good">🎯 Optimal move</div>';
+  const b=a.best&&a.best[0];if(!b)return'';
+  const why=a.canWin?'weakest acid in your hand that still wins':'best sacrifice: least acidic card in your hand';
+  return'<div class="strategy-feedback bad">Strategy: best play was <b>'+esc(b.name)+'</b> (pKa '+esc(pkaText(b))+') — '+why+'.</div>';
+}
 function cardNode(card,kind='hand',reveal=false,selectable=false){if(!card){const e=document.createElement('div');e.className='empty-card';e.textContent='card played';return e}const el=document.createElement('div');el.className='card '+(kind||'')+(selectable?' selectable':'');el.dataset.id=card.instance_id||'';const t=document.createElement('div');t.className='card-title';t.textContent=card.name||'';el.appendChild(t);const sf=document.createElement('div');sf.className='structure-frame';if(card.image){const img=document.createElement('img');img.src=card.image;img.alt=(card.name||'acid')+' structure';img.draggable=false;sf.appendChild(img)}else{const f=document.createElement('div');f.className='formula-fallback';f.textContent=formula(card);sf.appendChild(f)}el.appendChild(sf);const p=document.createElement('div');p.className='pka'+(reveal?'':' hidden');p.textContent=reveal?('pKa '+pkaText(card)):'pKa ?';el.appendChild(p);const est=document.createElement('div');est.className='estimate';est.textContent=reveal&&card.estimated?'* estimated / extrapolated':'';el.appendChild(est);if(selectable)el.onclick=()=>playCard(card.instance_id,el);return el}
-function renderPiles(){$('drawCount').textContent=playerDraw.length;$('wonCount').textContent=playerWon.length;$('cpuDrawCount').textContent=cpuDraw.length;$('cpuWonCount').textContent=cpuWon.length;$('potCount').textContent=warPot.length;$('potHud').textContent=warPot.length;$('trickHud').textContent=turn+1}
-function renderIdle(){renderPiles();const cpu=$('cpuCard');cpu.innerHTML='';const node=cardNode(cpuCurrent,'cpu',false,false);node.classList.add('deal');cpu.appendChild(node);setTimeout(()=>node.classList.remove('deal'),350);const pc=$('playerCenter');pc.innerHTML='';pc.appendChild(cardNode(null));const rb=$('resultBox');rb.innerHTML='<div class="result-head">Computer has played</div><div class="result-detail">Choose the acid you want to commit. Won cards recycle into your draw pile when your draw pile runs out.</div>';const h=$('hand');h.innerHTML='';hand.forEach(c=>{const slot=document.createElement('div');slot.className='hand-slot';slot.appendChild(cardNode(c,'hand',false,true));h.appendChild(slot)});while(h.children.length<HAND_SIZE){const slot=document.createElement('div');slot.className='hand-slot';slot.appendChild(cardNode(null));h.appendChild(slot)}sfxDeal();setHeight()}
-function renderResult(player,opp,winner,delta,captureCount){renderPiles();const cpu=$('cpuCard');cpu.innerHTML='';const cn=cardNode(opp,'cpu',true,false);cn.classList.add('flip');cpu.appendChild(cn);const pc=$('playerCenter');pc.innerHTML='';const pn=cardNode(player,'player-center',true,false);pn.classList.add('flip');pc.appendChild(pn);const h=$('hand');h.innerHTML='';hand.forEach(c=>{const slot=document.createElement('div');slot.className='hand-slot';const n=cardNode(c,'hand',false,false);n.classList.add('locked');slot.appendChild(n);h.appendChild(slot)});while(h.children.length<HAND_SIZE){const slot=document.createElement('div');slot.className='hand-slot';slot.appendChild(cardNode(null));h.appendChild(slot)};sfxFlip();setTimeout(()=>{cn.classList.remove('flip');pn.classList.remove('flip');if(winner==='player'){pn.classList.add('win');cn.classList.add('loss')}else if(winner==='computer'){cn.classList.add('win');pn.classList.add('loss')}else{cn.classList.add('tie');pn.classList.add('tie')}},450);const rb=$('resultBox');let head='',cls='',capture='',detail='';if(winner==='player'){head='You win the trick';cls='win';capture='You capture '+captureCount+' card'+(captureCount===1?'':'s')+'.';detail=pkaText(player)+' vs '+pkaText(opp)+' — '+(delta==null?'the reference table ranks the winner as the stronger acid.':'lower pKa wins.');if(captureCount>=6)sfxCaptureBig();else sfxWin();sparks(pn)}else if(winner==='computer'){head='Computer wins the trick';cls='loss';capture='CPU captures '+captureCount+' card'+(captureCount===1?'':'s')+'.';detail=pkaText(player)+' vs '+pkaText(opp)+' — '+(delta==null?'the reference table ranks the winner as the stronger acid.':'lower pKa wins.');sfxLoss()}else{head='Tie — cards go to the war pot';cls='tie';capture='The pot now holds '+(warPot.length+2)+' cards. The next winner takes them all.';detail=(delta!=null&&delta<=1e-12)?'Same reference pKa.':('ΔpKa = '+Number(delta).toFixed(2)+'; differences ≤ '+TIE_TOL.toFixed(2)+' are treated as a tie.');sfxTie()}rb.innerHTML='<div class="result-head '+cls+'">'+head+'</div><div class="capture-note">'+capture+'</div><div class="result-detail">'+detail+'</div><div class="next-note">Cards move to the winner’s pile, then the next trick is dealt…</div>';setHeight()}
+function renderPiles(){$('drawCount').textContent=playerDraw.length;$('wonCount').textContent=playerWon.length;$('cpuDrawCount').textContent=cpuDraw.length;$('cpuWonCount').textContent=cpuWon.length;$('potCount').textContent=warPot.length;$('potHud').textContent=warPot.length;$('trickHud').textContent=turn+1;$('strategyHud').textContent=gameMoves?Math.round(100*gameOptimal/gameMoves)+'%':'—'}
+function renderIdle(){renderPiles();const cpu=$('cpuCard');cpu.innerHTML='';const node=cardNode(cpuCurrent,'cpu',false,false);node.classList.add('deal');cpu.appendChild(node);setTimeout(()=>node.classList.remove('deal'),350);const pc=$('playerCenter');pc.innerHTML='';pc.appendChild(cardNode(null));const rb=$('resultBox');rb.innerHTML='<div class="result-head">Computer has played</div><div class="result-detail">Choose the acid you want to commit. If you can win, conserve strength by using the weakest acid that still wins; if you cannot win, sacrifice your least acidic card.</div>';const h=$('hand');h.innerHTML='';hand.forEach(c=>{const slot=document.createElement('div');slot.className='hand-slot';slot.appendChild(cardNode(c,'hand',false,true));h.appendChild(slot)});while(h.children.length<HAND_SIZE){const slot=document.createElement('div');slot.className='hand-slot';slot.appendChild(cardNode(null));h.appendChild(slot)}sfxDeal();flushPendingMoves();setHeight()}
+function renderResult(player,opp,winner,delta,captureCount,analysis){renderPiles();const cpu=$('cpuCard');cpu.innerHTML='';const cn=cardNode(opp,'cpu',true,false);cn.classList.add('flip');cpu.appendChild(cn);const pc=$('playerCenter');pc.innerHTML='';const pn=cardNode(player,'player-center',true,false);pn.classList.add('flip');pc.appendChild(pn);const h=$('hand');h.innerHTML='';hand.forEach(c=>{const slot=document.createElement('div');slot.className='hand-slot';const n=cardNode(c,'hand',false,false);n.classList.add('locked');slot.appendChild(n);h.appendChild(slot)});while(h.children.length<HAND_SIZE){const slot=document.createElement('div');slot.className='hand-slot';slot.appendChild(cardNode(null));h.appendChild(slot)};sfxFlip();setTimeout(()=>{cn.classList.remove('flip');pn.classList.remove('flip');if(winner==='player'){pn.classList.add('win');cn.classList.add('loss')}else if(winner==='computer'){cn.classList.add('win');pn.classList.add('loss')}else{cn.classList.add('tie');pn.classList.add('tie')}},450);const rb=$('resultBox');let head='',cls='',capture='',detail='';if(winner==='player'){head='You win the trick';cls='win';capture='You capture '+captureCount+' card'+(captureCount===1?'':'s')+'.';detail=pkaText(player)+' vs '+pkaText(opp)+' — '+(delta==null?'the reference table ranks the winner as the stronger acid.':'lower pKa wins.');if(captureCount>=6)sfxCaptureBig();else sfxWin();sparks(pn)}else if(winner==='computer'){head='Computer wins the trick';cls='loss';capture='CPU captures '+captureCount+' card'+(captureCount===1?'':'s')+'.';detail=pkaText(player)+' vs '+pkaText(opp)+' — '+(delta==null?'the reference table ranks the winner as the stronger acid.':'lower pKa wins.');sfxLoss()}else{head='Tie — cards go to the war pot';cls='tie';capture='The pot now holds '+(warPot.length+2)+' cards. The next winner takes them all.';detail=(delta!=null&&delta<=1e-12)?'Same reference pKa.':('ΔpKa = '+Number(delta).toFixed(2)+'; differences ≤ '+TIE_TOL.toFixed(2)+' are treated as a tie.');sfxTie()}rb.innerHTML='<div class="result-head '+cls+'">'+head+'</div><div class="capture-note">'+capture+'</div><div class="result-detail">'+detail+'</div>'+strategyHtml(analysis)+'<div class="next-note">Cards move to the winner’s pile, then the next trick is dealt…</div>';setHeight()}
 function sparks(card){const table=$('table'),r=card.getBoundingClientRect(),tr=table.getBoundingClientRect();for(let n=0;n<14;n++){const s=document.createElement('span');s.className='spark';s.style.left=(r.left-tr.left+r.width/2)+'px';s.style.top=(r.top-tr.top+35)+'px';const a=Math.random()*Math.PI*2,d=28+Math.random()*70;s.style.setProperty('--dx',(Math.cos(a)*d)+'px');s.style.setProperty('--dy',(Math.sin(a)*d)+'px');table.appendChild(s);setTimeout(()=>s.remove(),700)}}
-function playCard(id,clicked){if(waiting||gameOver||!cpuCurrent)return;ensureAudio();const idx=hand.findIndex(c=>c.instance_id===id);if(idx<0)return;waiting=true;const player=hand.splice(idx,1)[0],opp=cpuCurrent;cpuCurrent=null;lastPlayed={player,opp};const numericBoth=(player.pka!=null&&opp.pka!=null);const delta=numericBoth?Math.abs(Number(player.pka)-Number(opp.pka)):null;let winner='tie';if(!numericBoth){winner=Number(player.pka_sort)<Number(opp.pka_sort)?'player':'computer'}else if(delta>TIE_TOL+1e-12){winner=Number(player.pka)<Number(opp.pka)?'player':'computer'};const captureCount=winner==='tie'?0:warPot.length+2;renderResult(player,opp,winner,delta,captureCount);if(timer)clearTimeout(timer);timer=setTimeout(()=>advance(player,opp,winner),HOLD_MS)}
+function trackPromise(p){movePromises.add(p);p.finally(()=>movePromises.delete(p));return p}
+function recordPersistentMove(moveNo,optimal){
+  if(playerMode!=='player'||!currentGameId||!sessionToken)return;
+  const payload={p_course_code:args.course_code,p_session_token:sessionToken,p_game_id:currentGameId,p_move_number:moveNo,p_optimal:!!optimal};
+  const pr=rpc('acid_record_move',payload,true).then(d=>{if(!d||d.ok!==true)throw new Error((d&&d.error)||'move_not_saved');pendingMoves.delete(moveNo)}).catch(()=>pendingMoves.set(moveNo,payload));
+  trackPromise(pr);
+}
+async function flushPendingMoves(){
+  if(playerMode!=='player'||pendingMoves.size===0)return;
+  const entries=[...pendingMoves.entries()];
+  for(const [n,payload] of entries){try{const d=await rpc('acid_record_move',payload,true);if(d&&d.ok)pendingMoves.delete(n)}catch(e){}}
+}
+function playCard(id,clicked){
+  if(waiting||gameOver||!cpuCurrent)return;ensureAudio();const idx=hand.findIndex(c=>c.instance_id===id);if(idx<0)return;
+  const snapshot=hand.slice(),opp=cpuCurrent,analysis=analyzeOptimal(snapshot,opp,id);gameMoves++;if(analysis.optimal)gameOptimal++;recordPersistentMove(gameMoves,analysis.optimal);
+  waiting=true;const player=hand.splice(idx,1)[0];cpuCurrent=null;lastPlayed={player,opp};const numericBoth=(player.pka!=null&&opp.pka!=null);const delta=numericBoth?Math.abs(Number(player.pka)-Number(opp.pka)):null;let winner='tie';if(!numericBoth){winner=Number(player.pka_sort)<Number(opp.pka_sort)?'player':'computer'}else if(delta>TIE_TOL+1e-12){winner=Number(player.pka)<Number(opp.pka)?'player':'computer'};const captureCount=winner==='tie'?0:warPot.length+2;renderResult(player,opp,winner,delta,captureCount,analysis);if(timer)clearTimeout(timer);timer=setTimeout(()=>advance(player,opp,winner),HOLD_MS)
+}
 function advance(player,opp,winner){if(!waiting)return;if(winner==='player'){playerWon.push(...warPot.splice(0),player,opp)}else if(winner==='computer'){cpuWon.push(...warPot.splice(0),player,opp)}else{warPot.push(player,opp)}turn++;waiting=false;lastPlayed=null;refillHand();prepareCpu();const p=playerTotal(false),c=cpuTotal(false);if(p<=0||c<=0){if(p<=0&&c>0)cpuWon.push(...warPot.splice(0));else if(c<=0&&p>0)playerWon.push(...warPot.splice(0));finishGame(p,c);return}renderIdle()}
-function finishGame(p,c){gameOver=true;renderPiles();let title,sub;if(p<=0&&c<=0){title='DRAW';sub='Both sides ran out of cards at the same time.'}else if(p<=0){title='CPU WINS';sub='The computer captured the battle deck.'}else{title='YOU WIN';sub='You captured the battle deck.'}$('gameoverTitle').textContent=title;$('gameoverSub').textContent=sub+'  Tricks played: '+turn+'.';$('gameover').classList.add('show');if(p>0)sfxCaptureBig();else sfxLoss();setHeight()}
-function startBattle(){ensureAudio();const [p,c]=makeDeal();hand=[];playerDraw=p;playerWon=[];cpuDraw=c;cpuWon=[];cpuCurrent=null;warPot=[];turn=0;waiting=false;gameOver=false;lastPlayed=null;if(timer){clearTimeout(timer);timer=null}$('setup').style.display='none';$('battle').style.display='block';$('gameover').classList.remove('show');$('solventHud').textContent=solvent==='water'?'H₂O':'DMSO';$('deckHud').textContent=pool.length+' acids';refillHand();prepareCpu();renderIdle()}
+async function finishPersistentGame(won){
+  if(playerMode!=='player'||!currentGameId)return;
+  await Promise.allSettled([...movePromises]);await flushPendingMoves();
+  try{await rpc('acid_finish_game',{p_course_code:args.course_code,p_session_token:sessionToken,p_game_id:currentGameId,p_won:!!won},true);await refreshMyStats()}catch(e){}
+  currentGameId=null;
+}
+function finishGame(p,c){gameOver=true;renderPiles();let title,sub,won=false;if(p<=0&&c<=0){title='DRAW';sub='Both sides ran out of cards at the same time.'}else if(p<=0){title='CPU WINS';sub='The computer captured the battle deck.'}else{title='YOU WIN';sub='You captured the battle deck.';won=true}const pct=gameMoves?Math.round(1000*gameOptimal/gameMoves)/10:0;$('gameoverTitle').textContent=title;$('gameoverSub').innerHTML=esc(sub)+'<br>Tricks played: '+turn+' · Strategy: <b>'+gameOptimal+'/'+gameMoves+' optimal ('+pct+'%)</b>.'+(playerMode==='player'?'<br><span class="saved-note">Moves are saved as you play; completed wins count on the Wins leaderboard.</span>':'<br><span class="saved-note">Guest game — nothing was saved.</span>');$('gameover').classList.add('show');if(won)sfxCaptureBig();else sfxLoss();finishPersistentGame(won);setHeight()}
+async function startBattle(){
+  ensureAudio();$('start').disabled=true;$('setupStatus').textContent='';
+  if(playerMode==='player'){
+    try{const d=await rpc('acid_start_game',{p_course_code:args.course_code,p_session_token:sessionToken,p_solvent:solvent,p_deck_size:deckChoice});if(!d||!d.ok){$('setupStatus').textContent=authErrorMessage(d&&d.error);$('start').disabled=false;return}currentGameId=d.game_id}catch(e){$('setupStatus').textContent='Could not start a saved game. Check the leaderboard connection or use Guest mode.';$('start').disabled=false;return}
+  }else currentGameId=null;
+  const [p,c]=makeDeal();hand=[];playerDraw=p;playerWon=[];cpuDraw=c;cpuWon=[];cpuCurrent=null;warPot=[];turn=0;waiting=false;gameOver=false;lastPlayed=null;gameMoves=0;gameOptimal=0;pendingMoves.clear();movePromises.clear();if(timer){clearTimeout(timer);timer=null}$('setup').style.display='none';$('battle').style.display='block';$('gameover').classList.remove('show');$('solventHud').textContent=solvent==='water'?'H₂O':'DMSO';$('deckHud').textContent=pool.length+' acids';$('playerHud').textContent=playerMode==='player'?playerNickname:'Guest';$('start').disabled=false;refillHand();prepareCpu();renderIdle()
+}
 function backToSetup(){if(timer){clearTimeout(timer);timer=null}$('battle').style.display='none';$('setup').style.display='block';$('gameover').classList.remove('show');refreshDeckControls();setHeight()}
 function battleAgain(){startBattle()}
-$('setup').addEventListener('click',e=>{const solventButton=e.target.closest('button[data-solvent]');if(solventButton){setSolvent(solventButton.dataset.solvent);return}const deckButton=e.target.closest('button[data-deck]');if(deckButton){setDeck(deckButton.dataset.deck);return}});$('start').addEventListener('click',startBattle);$('sound').addEventListener('click',toggleSound);$('change').addEventListener('click',backToSetup);$('newDeck').addEventListener('click',backToSetup);$('again').addEventListener('click',battleAgain);
-$('fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch(e){}setHeight()});document.addEventListener('fullscreenchange',()=>{$('fullscreen').textContent=document.fullscreenElement?'↙ Exit full screen':'⛶ Full screen';setHeight()});window.addEventListener('resize',setHeight);
-loadSoundPref();setSolvent('water');setDeck('25');refreshDeckControls();setHeight();
+
+async function loadLeaderboard(){
+  const body=$('leaderboardBody');body.innerHTML='<div class="leaderboard-loading">Loading leaderboard…</div>';
+  if(!apiReady()){body.innerHTML='<div class="leaderboard-empty">Leaderboard setup is not complete yet. Guest play still works.</div>';return}
+  try{const rows=await rpc('acid_leaderboard',{p_course_code:args.course_code});leaderboardRows=Array.isArray(rows)?rows:[];renderLeaderboard()}catch(e){body.innerHTML='<div class="leaderboard-empty">Could not load the leaderboard.</div>'}
+}
+function renderLeaderboard(){
+  const body=$('leaderboardBody');let rows=leaderboardRows.slice();
+  if(leaderboardMode==='wins')rows=rows.filter(r=>Number(r.wins||0)>0).sort((a,b)=>Number(b.wins||0)-Number(a.wins||0)||(Number(b.optimal_pct||0)-Number(a.optimal_pct||0))||Number(b.moves||0)-Number(a.moves||0));
+  else rows=rows.filter(r=>Number(r.moves||0)>=STRATEGY_MIN).sort((a,b)=>Number(b.optimal_pct||0)-Number(a.optimal_pct||0)||Number(b.moves||0)-Number(a.moves||0)||Number(b.wins||0)-Number(a.wins||0));
+  if(!rows.length){body.innerHTML='<div class="leaderboard-empty">'+(leaderboardMode==='wins'?'No completed wins yet.':'No player has reached '+STRATEGY_MIN+' recorded moves yet.')+'</div>';return}
+  const head=leaderboardMode==='wins'?'<div class="lb-row lb-head"><span>#</span><span>Player</span><span>Wins</span><span>Optimal</span></div>':'<div class="lb-row lb-head"><span>#</span><span>Player</span><span>Optimal</span><span>Moves</span></div>';
+  body.innerHTML=head+rows.slice(0,50).map((r,i)=>{const mine=playerMode==='player'&&String(r.nickname).toLowerCase()===String(playerNickname).toLowerCase();return'<div class="lb-row'+(mine?' mine':'')+'"><span>'+(i+1)+'</span><span>'+esc(r.nickname)+(mine?' <small>you</small>':'')+'</span><span>'+(leaderboardMode==='wins'?Number(r.wins||0):(r.optimal_pct==null?'—':Number(r.optimal_pct).toFixed(1)+'%'))+'</span><span>'+(leaderboardMode==='wins'?(r.optimal_pct==null?'—':Number(r.optimal_pct).toFixed(1)+'%'):Number(r.moves||0))+'</span></div>'}).join('');
+}
+function openLeaderboard(){leaderboardMode='wins';document.querySelectorAll('[data-lb]').forEach(b=>b.classList.toggle('active',b.dataset.lb==='wins'));$('leaderboardModal').classList.add('show');loadLeaderboard();setHeight()}
+function closeLeaderboard(){$('leaderboardModal').classList.remove('show');setHeight()}
+
+$('entryGuest').addEventListener('click',enterGuest);$('entryPlayer').addEventListener('click',showAuth);$('authBack').addEventListener('click',hideAuth);$('signIn').addEventListener('click',()=>authPlayer('login'));$('createPlayer').addEventListener('click',()=>authPlayer('create'));
+$('pinInput').addEventListener('input',e=>{e.target.value=e.target.value.replace(/\D/g,'').slice(0,4)});$('pinInput').addEventListener('keydown',e=>{if(e.key==='Enter')authPlayer('login')});
+$('setup').addEventListener('click',e=>{const solventButton=e.target.closest('button[data-solvent]');if(solventButton){setSolvent(solventButton.dataset.solvent);return}const deckButton=e.target.closest('button[data-deck]');if(deckButton){setDeck(deckButton.dataset.deck);return}});
+$('start').addEventListener('click',startBattle);$('sound').addEventListener('click',toggleSound);$('change').addEventListener('click',backToSetup);$('newDeck').addEventListener('click',backToSetup);$('again').addEventListener('click',battleAgain);$('profile').addEventListener('click',switchPlayer);$('leaderboardBtn').addEventListener('click',openLeaderboard);$('leaderboardClose').addEventListener('click',closeLeaderboard);$('leaderboardRefresh').addEventListener('click',loadLeaderboard);
+document.querySelectorAll('[data-lb]').forEach(b=>b.addEventListener('click',()=>{leaderboardMode=b.dataset.lb;document.querySelectorAll('[data-lb]').forEach(x=>x.classList.toggle('active',x===b));renderLeaderboard()}));$('leaderboardModal').addEventListener('click',e=>{if(e.target===$('leaderboardModal'))closeLeaderboard()});
+$('fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen()}catch(e){}setHeight()});document.addEventListener('fullscreenchange',()=>{$('fullscreen').textContent=document.fullscreenElement?'↙ Exit full screen':'⛶ Full screen';setHeight()});window.addEventListener('resize',setHeight);document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')flushPendingMoves()});
+
+loadSoundPref();$('nicknameInput').value=savedNickname();if(!apiReady()){$('leaderboardConfigNote').style.display='block';$('entryPlayer').classList.add('disabled-look')}setSolvent('water');setDeck('25');refreshDeckControls();setHeight();
 })();
+
 </script>
 </body>
 </html>'''
 
 
 
+def _secret_value(name: str) -> str:
+    try:
+        return str(st.secrets[name]).strip()
+    except (KeyError, FileNotFoundError):
+        return ""
+
+
 def acid_battle_component():
+    # Only the publishable/anon key is sent to the browser. Never expose the
+    # SUPABASE_SECRET_KEY/service-role key in the HTML component.
+    public_key = _secret_value("SUPABASE_PUBLISHABLE_KEY") or _secret_value("SUPABASE_ANON_KEY")
     payload = {
         "water": WATER,
         "dmso": DMSO,
         "core25": CORE_25_IDS,
         "extended50": EXTENDED_50_IDS,
+        "supabase_url": _secret_value("SUPABASE_URL"),
+        "supabase_key": public_key,
+        "course_code": _secret_value("COURSE_CODE"),
     }
     html = HTML.replace("__ACID_BATTLE_DATA__", json.dumps(payload, ensure_ascii=False))
     components.html(html, height=1080, scrolling=False)

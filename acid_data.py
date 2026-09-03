@@ -28,7 +28,7 @@ WATER_ACIDS = [
     dict(id='anilinium', name='Anilinium', ref='PhNH3+', pka=4.6, pka_text='4.6', estimated=False, smiles='[NH3+]c1ccccc1'),
     # The source list gives the base name; Acid Battle displays the acidic conjugate-acid species.
     dict(id='pyridinium', name='Pyridinium', ref='pyridine', pka=5.3, pka_text='5.3', estimated=False, smiles='[nH+]1ccccc1', note='pKa of the conjugate acid of pyridine'),
-    dict(id='imidazolium', name='Imidazolium', ref='imidazole', pka=7.0, pka_text='7', estimated=False, smiles='[NH+]1=CN=CC1', note='pKa of the conjugate acid of imidazole'),
+    dict(id='imidazolium', name='Imidazolium', ref='imidazole', pka=7.0, pka_text='7', estimated=False, smiles='[nH]1cc[nH+]c1', note='pKa of the conjugate acid of imidazole'),
     dict(id='dmaph', name='DMAPH⁺', ref='4-dimethylaminopyridine', pka=10.0, pka_text='10', estimated=False, smiles='CN(C)c1cc[nH+]cc1', note='pKa of the conjugate acid of DMAP'),
     dict(id='thiophenol', name='Thiophenol', ref='PhSH', pka=8.0, pka_text='8', estimated=False, smiles='Sc1ccccc1'),
     dict(id='phenol', name='Phenol', ref='PhOH', pka=10.0, pka_text='10', estimated=False, smiles='Oc1ccccc1'),
