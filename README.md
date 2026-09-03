@@ -1,8 +1,8 @@
-# Acid Battle v0.0.6
+# Acid Battle v0.0.7
 
 Standalone physical-organic-chemistry Acid Battle game.
 
-## v0.0.6 fixes
+## v0.0.7 fixes
 
 - Restores the balanced dealing model from the original Organic Chemistry Trainer Acid Battle.
 - A deck choice counts **unique acid types**, not total physical cards.
@@ -22,3 +22,10 @@ Standalone physical-organic-chemistry Acid Battle game.
 pip install -r requirements.txt
 streamlit run app.py
 ```
+
+
+## v0.0.7
+- Fixed molecular structure images being squeezed into narrow vertical strips on cards.
+- Structures now render inside an absolutely positioned viewport, independent of card flex sizing.
+- RDKit depictions use `fitImage=True` and a larger source canvas for improved readability.
+- Mobile card structure sizing updated to use the same robust viewport layout.
