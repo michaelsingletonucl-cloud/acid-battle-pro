@@ -22,3 +22,7 @@ The interface is responsive for desktop and portrait smartphone use.
 - Synchronized 3D card-flip reveal animation plus deal-in motion for each new battle.
 - Persistent **Sound on / Muted** control using browser local storage; on phones it collapses to a large touch-friendly speaker icon.
 - Sound is initialized from a user gesture so it behaves correctly with normal mobile browser autoplay restrictions.
+
+## Streamlit Community Cloud system dependencies
+
+This release includes `packages.txt` with the Linux libraries required by RDKit's drawing backend (`libxrender1`, `libxext6`, `libsm6`) and pins RDKit to `2026.3.5`, which provides CPython 3.12 Linux wheels.
