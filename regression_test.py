@@ -43,7 +43,7 @@ for marker in [
 assert "pool=shuffle(list.slice()).slice(0,n)" in app_source
 assert "return[shuffle(p),shuffle(c)]" in app_source
 
-# v0.0.10 account / leaderboard / strategy features.
+# v0.0.10+ account / leaderboard / strategy features.
 for marker in [
     'PLAY AS GUEST',
     'SIGN IN / CREATE PLAYER',
@@ -77,4 +77,25 @@ for marker in [
 ]:
     assert marker in sql_source, marker
 
-print('Acid Battle v0.0.10 regression: PASS')
+# v0.0.11 accessibility features.
+for marker in [
+    '♿ Accessibility',
+    'aria-live="polite"',
+    'aria-modal="true"',
+    "setAttribute('role','button')",
+    "e.key==='Enter'||e.key===' '",
+    'focus-visible',
+    'prefers-reduced-motion:reduce',
+    'Reduce motion',
+    'Manual result advance',
+    'NEXT TRICK',
+    'function announce(',
+    'function loadAccessibilityPrefs(',
+    'user-scalable=no',
+]:
+    if marker == 'user-scalable=no':
+        assert marker not in app_source, marker
+    else:
+        assert marker in app_source, marker
+
+print('Acid Battle v0.0.11 regression: PASS')
