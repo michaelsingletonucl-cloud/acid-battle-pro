@@ -1,8 +1,8 @@
-# Acid Battle v0.0.13
+# Acid Battle v0.0.14
 
 Standalone physical-organic-chemistry Acid Battle game for Streamlit.
 
-## New in v0.0.13 — full motion by default
+## New in v0.0.14 — full motion by default
 
 - **Reduce motion now defaults to OFF**, so card flips, shakes, sparks, and transitions are enabled for new users.
 - A user who explicitly turns Reduce motion ON still keeps that preference in the browser for later visits.
@@ -70,3 +70,10 @@ streamlit run app.py
 ```
 
 Guest mode works even when Supabase is not configured.
+
+
+## v0.0.14 feedback changes
+- Trick outcome is now the dominant feedback: TRICK WON, TRICK LOST, or TIE — WAR POT.
+- Result panel is visually keyed to win/loss/tie independently of strategy quality.
+- Strategy feedback is shortened to OPTIMAL MOVE or STRATEGY: NOT OPTIMAL.
+- Non-optimal feedback no longer reveals the best card.
