@@ -1,8 +1,15 @@
-# Acid Battle v0.0.11
+# Acid Battle v0.0.13
 
 Standalone physical-organic-chemistry Acid Battle game for Streamlit.
 
-## New in v0.0.11 — accessibility pass
+## New in v0.0.13 — full motion by default
+
+- **Reduce motion now defaults to OFF**, so card flips, shakes, sparks, and transitions are enabled for new users.
+- A user who explicitly turns Reduce motion ON still keeps that preference in the browser for later visits.
+- The Accessibility panel continues to provide the motion toggle and manual result advance option.
+- Card flips, brighter sparks, and high-contrast **NOT OPTIMAL** feedback from v0.0.12 are retained.
+
+## Accessibility features retained from v0.0.11
 
 This release adds an accessibility layer targeting the practical requirements of **WCAG 2.1 AA** for the game interface. It is not a formal accessibility certification.
 
@@ -18,7 +25,7 @@ This release adds an accessibility layer targeting the practical requirements of
 - Leaderboard tabs expose selected state to assistive technology.
 - Browser pinch-to-zoom is enabled; the mobile layout was retested at 200% zoom without page-level horizontal overflow.
 - A new **♿ Accessibility** panel is available from the top bar.
-- **Reduce motion** can disable card flips, shakes, sparks, and most transitions; the app also honors the operating system/browser `prefers-reduced-motion` preference.
+- **Reduce motion** can disable card flips, shakes, sparks, and most transitions; it is OFF by default.
 - **Manual result advance** can turn off the automatic result timer so each trick result remains visible until the player chooses **Next trick**.
 - Sound remains optional and independently mutable with the existing sound toggle.
 - Mobile top controls now use a two-column touch-friendly layout so Accessibility and Leaderboards remain reachable on narrow screens.

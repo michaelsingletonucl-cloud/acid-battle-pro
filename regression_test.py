@@ -77,7 +77,7 @@ for marker in [
 ]:
     assert marker in sql_source, marker
 
-# v0.0.11 accessibility features.
+# v0.0.13 accessibility + animation defaults.
 for marker in [
     '♿ Accessibility',
     'aria-live="polite"',
@@ -85,7 +85,6 @@ for marker in [
     "setAttribute('role','button')",
     "e.key==='Enter'||e.key===' '",
     'focus-visible',
-    'prefers-reduced-motion:reduce',
     'Reduce motion',
     'Manual result advance',
     'NEXT TRICK',
@@ -98,4 +97,9 @@ for marker in [
     else:
         assert marker in app_source, marker
 
-print('Acid Battle v0.0.11 regression: PASS')
+assert '@media(prefers-reduced-motion:reduce)' not in app_source
+assert "function sparks(card){if(reduceMotion)return;" in app_source
+assert '⚠ NOT OPTIMAL' in app_source
+assert "reduceMotion=r==='1'" in app_source
+assert 'Reduce motion is OFF by default' in app_source
+print('Acid Battle v0.0.13 regression: PASS')
