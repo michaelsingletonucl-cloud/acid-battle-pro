@@ -1,6 +1,16 @@
-# Acid Battle v0.0.14
+# Acid Battle v0.0.15
 
 Standalone physical-organic-chemistry Acid Battle game for Streamlit.
+
+
+## New in v0.0.15 — tie handling and credits
+
+- Fixed the strongest-acid edge case: two equal non-numeric reference entries (notably HF–SbF₅) now resolve as a **tie** instead of defaulting to a CPU win. This prevents the CPU from incorrectly capturing both copies and later replaying a duplicate strongest acid.
+- A tie on the CPU's final available card now proceeds through the normal war-pot exhaustion rule, so the player wins the pot when the CPU has no card left to continue.
+- **Tied tricks are neutral for strategy scoring**: they are not added to the optimal-move numerator or denominator and are not written as strategy moves to Supabase.
+- Tie feedback now explicitly says **TIE — STRATEGY NOT SCORED**.
+- Added the requested credits block, including the pKa-data acknowledgement to Daniel Singleton (Texas A&M University).
+- No database migration is required.
 
 ## New in v0.0.14 — full motion by default
 
@@ -37,12 +47,12 @@ This release adds an accessibility layer targeting the practical requirements of
 - Clear reminder that students must remember both; there is no PIN recovery.
 - Nickname screening for length/characters and common inappropriate names.
 - Persistent Supabase records scoped automatically to the hidden `COURSE_CODE`.
-- Every signed-in move is recorded as it is played.
+- Every signed-in **scored** move is recorded as it is played; tied tricks are excluded from strategy scoring.
 - **Optimal move** rule:
   - if a winning card exists, use the least acidic card that still wins;
   - if no card can win, sacrifice the least acidic card in the hand.
 - **Wins leaderboard**: total completed game wins.
-- **Strategy leaderboard**: optimal-move percentage, minimum **20 recorded moves**.
+- **Strategy leaderboard**: optimal-move percentage, minimum **20 scored moves**; ties are neutral and excluded.
 - Unfinished games do not count as wins, but already-recorded moves still count toward strategy.
 - Randomized balanced decks, H2O/DMSO scales, card sounds, animations, fullscreen, and smartphone layout are retained.
 

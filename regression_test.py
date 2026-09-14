@@ -105,4 +105,22 @@ assert 'TRICK WON' in app_source
 assert 'TRICK LOST' in app_source
 assert "reduceMotion=r==='1'" in app_source
 assert 'Reduce motion is OFF by default' in app_source
-print('Acid Battle v0.0.14 regression: PASS')
+# v0.0.15 tie handling + credits.
+for marker in [
+    'function resolveWinner(',
+    "if(Math.abs(av-bv)<1e-9)return'tie'",
+    "if(winner==='tie'){analysis.scored=false}",
+    'TIE — STRATEGY NOT SCORED',
+    'Tied tricks are neutral and are not included in strategy scoring.',
+    'Design &amp; development:',
+    'AI-assisted development using ChatGPT (OpenAI)',
+    'Scientific content &amp; educational design:',
+    'Daniel Singleton (Texas A&amp;M University)',
+    'm.singleton@uclouvain.be',
+]:
+    assert marker in app_source, marker
+
+# The old non-numeric comparison defaulted equal rankings to the CPU.
+assert "winner=Number(player.pka_sort)<Number(opp.pka_sort)?'player':'computer'" not in app_source
+
+print('Acid Battle v0.0.15 regression: PASS')
